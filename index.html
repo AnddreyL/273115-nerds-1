@@ -3,10 +3,239 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <div class="container">
+        <div class="main-header__top clearfix">
+          <div class="main-header__logo">
+            <img src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс">
+          </div>
+          <nav class="main-header__nav">
+            <ul>
+              <li class="main-header__item">
+                <a href="#">Студия</a>
+              </li>
+              <li class="main-header__item">
+                <a href="#">Клиенты</a>
+              </li>
+              <li class="main-header__item">
+                <a href="catalog.html">Магазин</a>
+              </li>
+              <li class="main-header__item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="main-header__cart">
+            <a href="#">Корзина</a>
+          </div>
+        </div>
+        <div class="slider">
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-2" name="toggle">
+            <input type="radio" id="btn-3" name="toggle">
+          <div class="slider__controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+          <div class="slider__slides">
+            <div class="slider__slide">
+              <div class="slider__text">
+                <b>Долго, дорого, скрупулезно.</b>
+                <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                <a class="btn btn--slide" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slider__text">
+                <b>Любим математику как никто другой</b>
+                <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
+                <a class="btn btn--slide" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slider__text">
+                <b>Только ночь,<br> только хардкор</b>
+                <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+                <a class="btn btn--slide" href="#">Узнать больше</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <section class="services clearfix">
+        <div class="services-item services-item__sites">
+          <h2 class="services-item__name">Веб-сайты</h2>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="btn btn--sites" href="#">Заказать</a>
+        </div>
+        <div class="services-item services-item__apps">
+          <h2 class="services-item__name">Приложения</h2>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="btn btn--apps" href="#">Заказать</a>
+        </div>
+        <div class="services-item services-item__presentations">
+          <h2 class="services-item__name">Презентации</h2>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="btn btn--presentations" href="#">Заказать</a>
+        </div>
+      </section>
+      <div class="index-content clearfix">
+        <div class="index-content__preview">
+          <p class="index-content__slogan"><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+          <p class="index-content__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <div class="index-content__services">
+            <p><b>Выполняем заказы на разработку:</b></p>
+            <ul>
+              <li>
+                Веб-сайтов любой сложности
+              </li>
+              <li>
+                Мобильных приложений для iOS и Android
+              </li>
+              <li>
+                Слайдшоу и видео для корпоративных презентаций
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="index-content__stats">
+          <div class="index-content__logo">
+            <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Нёрдс">
+          </div>
+          <p class="index-content__percent-title"><b>С 2004 года Любим точность во всем:</b></p>
+          <ul class="index-content__percent">
+            <li>
+              <b>146<sup>%</sup></b>
+              <p>Уровень самоотдачи</p>
+            </li>
+            <li>
+              <b>100<sup>%</sup></b>
+              <p>Соблюдение сроков</p>
+            </li>
+            <li>
+              <b>50<sup>%</sup></b>
+              <p>Минимальная предоплата</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="products-logo">
+        <ul class="clearfix">
+          <li class="products-logo__item">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/htmlacademy-logo.png" width="260" height="180" alt="Htmlacademy">
+            </a>
+          </li>
+          <li class="products-logo__item">
+            <a href="#">
+              <img src="img/barbershop-logo.png" width="260" height="180" alt="Borodinski">
+            </a>
+          </li>
+          <li class="products-logo__item">
+            <a href="#">
+              <img src="img/pink-logo.png" width="260" height="180" alt="Pink">
+            </a>
+          </li>
+          <li class="products-logo__item">
+            <a href="#">
+              <img src="img/mishka-logo.png" width="260" height="180" alt="Mishka">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__top">
+        <div class="page-footer__map">
+          <img src="img/map.jpg" width="1440" height="416" alt="Улица Большая Конюшенная, дом 19/8">
+        </div>
+        <div class="page-footer__contacts">
+          <b>Nёrds design studio</b>
+          <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="btn btn--footer" href="#">Напишите нам</a>
+        </div>
+      </div>
+      <div class="page-footer__bottom container clearfix">
+        <div class="page-footer__social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </div>
+        <div class="page-footer__slogan">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
+    <div class="modal">
+      <button class="modal__close" type="button" title="Закрыть">Закрыть</button>
+      <p class="modal__title"><b>Напишите нам</b></p>
+      <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="message-form__inner message-form__inner--name">
+          <span>Ваше имя:</span><br>
+          <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+        </div>
+        <div class="message-form__inner message-form__inner--email">
+          <span>Ваш e-mail:</span><br>
+          <input type="email" name="email" placeholder="Для отправки ответа">
+        </div>
+        <span>Текст письма:</span><br>
+        <textarea name="text" placeholder="В свободной форме"></textarea>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+    </div>
+    <script>
+      var link = document.querySelector(".btn--footer");
+      var popup = document.querySelector(".modal");
+      var close = document.querySelector(".modal__close");
+      var form = popup.querySelector("form");
+      var write = popup.querySelector("[name=name]");
+      var email = popup.querySelector("[name=email]");
+      var storage = localStorage.getItem("write");
+      
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+        
+        if (storage) {
+          write.value = storage;
+          email.focus();
+        } else {
+          write.focus();
+        }
+      });
+      
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          if (popup.classList.contains("modal-show")) {
+            popup.classList.remove("modal-show");
+          }
+        }
+      });
+      
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      });
+      
+      form.addEventListener("submit", function (evt) {
+        if (!write.value || !email.value) {
+          evt.preventDefault();
+          popup.classList.add("modal-error");
+        } else {
+          localStorage.setItem("write", write.value);
+        }
+      });
+    </script>
   </body>
 </html>
