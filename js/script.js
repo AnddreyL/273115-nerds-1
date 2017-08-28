@@ -4,7 +4,6 @@ var close = document.querySelector(".modal__close");
 var form = popup.querySelector("form");
 var write = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
-var storage = localStorage.getItem("write");
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -29,14 +28,18 @@ window.addEventListener("keydown", function (evt) {
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
-  popup.classList.remove("modal-error");
+  write.classList.remove("modal-error");
+  email.classList.remove("modal-error");
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!write.value || !email.value) {
+  if (!write.value) {
     evt.preventDefault();
-    popup.classList.add("modal-error");
-  } else {
-    localStorage.setItem("write", write.value);
+    write.classList.add("modal-error");
+  }
+  
+  if (!email.value) {
+    evt.preventDefault();
+    email.classList.add("modal-error");
   }
 });

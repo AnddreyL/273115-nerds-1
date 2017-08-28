@@ -5,12 +5,12 @@
     <title>Дизайн-студия "Нёрдс"</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
-        <div class="main-header__top clearfix">
+        <div class="main-header__top">
           <div class="main-header__logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="160" height="65" viewBox="0 0 160 65">
               <title>Логотип дизайн-студии "Нёрдс"</title>
@@ -82,24 +82,25 @@
     </header>
     <main class="container">
       <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
-      <section class="services clearfix">
+      <section class="services">
+        <h2 class="visually-hidden">Услуги</h2>
         <div class="services-item services-item__sites">
-          <h2 class="services-item__name">Веб-сайты</h2>
+          <h3 class="services-item__name">Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a class="btn" href="#">Заказать</a>
         </div>
         <div class="services-item services-item__apps">
-          <h2 class="services-item__name">Приложения</h2>
+          <h3 class="services-item__name">Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="btn btn--apps" href="#">Заказать</a>
         </div>
         <div class="services-item services-item__presentations">
-          <h2 class="services-item__name">Презентации</h2>
+          <h3 class="services-item__name">Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           <a class="btn btn--presentations" href="#">Заказать</a>
         </div>
       </section>
-      <div class="index-content clearfix">
+      <div class="index-content">
         <div class="index-content__preview">
           <p class="index-content__slogan"><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
           <p class="index-content__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -138,7 +139,8 @@
         </div>
       </div>
       <section class="products-logo">
-        <ul class="clearfix">
+        <h2 class="visually-hidden">Наши продукты</h2>
+        <ul>
           <li class="products-logo__item">
             <a class="products-logo__link" href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/htmlacademy-logo.png" width="260" height="180" alt="Логотип сайта Htmlacademy">
@@ -164,9 +166,9 @@
     </main>
     <footer class="page-footer">
       <p class="page-footer__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6028274133955!2d30.323158384408572!3d59.93873240785674!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1503576213046" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6028274133955!2d30.323158384408572!3d59.93873240785674!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1503576213046" height="416" style="border:0" allowfullscreen></iframe>
       </p>
-      <div class="page-footer__content container clearfix">
+      <div class="page-footer__content container">
         <div class="page-footer__contacts">
           <b>Nёrds design studio</b>
           <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
@@ -213,11 +215,11 @@
       <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="message-form__inner message-form__inner--name">
           <label for="name">Ваше имя:</label>
-          <input id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+          <input class="message-form__input" id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
         </div>
         <div class="message-form__inner message-form__inner--email">
           <label for="email">Ваш e-mail:</label>
-          <input id="email" type="email" name="email" placeholder="Для отправки ответа">
+          <input class="message-form__input" id="email" type="email" name="email" placeholder="Для отправки ответа">
         </div>
         <label for="text">Текст письма:</label><br>
         <textarea id="text" name="text" placeholder="В свободной форме"></textarea>
