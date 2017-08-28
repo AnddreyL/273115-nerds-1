@@ -1405,3 +1405,4 @@ input:not([disabled]) + .filter__checkbox:hover .checkbox-indicator {
 #btn-3:checked ~ .slider__slides .slider__slide:nth-child(3) {
   display: block;
 }
+
