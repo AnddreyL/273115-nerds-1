@@ -872,6 +872,7 @@ input:not([disabled]) + .filter__checkbox:hover .checkbox-indicator {
 
 .btn--form:active,
 .btn--result:active {
+  color: #959595;
   background-color: #d5d5d5;
   -webkit-box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
           box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
@@ -1057,10 +1058,17 @@ input:not([disabled]) + .filter__checkbox:hover .checkbox-indicator {
   text-decoration: none;
 }
 
-.card__inner p {
+.card__text {
+  width: 230px;
   margin: 0;
   margin-bottom: 30px;
+  margin-left: 67px;
   line-height: 18px;
+}
+
+.card__text--small {
+  width: 180px;
+  margin-left: 91px;
 }
 
 .card__inner .btn {
@@ -1120,17 +1128,47 @@ input:not([disabled]) + .filter__checkbox:hover .checkbox-indicator {
 }
 
 @-webkit-keyframes bounce {
-  0% {-webkit-transform: translateX(-2000px);transform: translateX(-2000px);}
-  70% {-webkit-transform: translateX(30px);transform: translateX(30px);}
-  90% {-webkit-transform: translateX(-10px);transform: translateX(-10px);}
-  100% {-webkit-transform: translateX(0);transform: translateX(0);}
+  0% {
+    -webkit-transform: translateX(-2000px);
+            transform: translateX(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 @keyframes bounce {
-  0% {-webkit-transform: translateX(-2000px);transform: translateX(-2000px);}
-  70% {-webkit-transform: translateX(30px);transform: translateX(30px);}
-  90% {-webkit-transform: translateX(-10px);transform: translateX(-10px);}
-  100% {-webkit-transform: translateX(0);transform: translateX(0);}
+  0% {
+    -webkit-transform: translateX(-2000px);
+            transform: translateX(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 .modal-show {
@@ -1258,6 +1296,73 @@ input:not([disabled]) + .filter__checkbox:hover .checkbox-indicator {
   border-color: #e74246;
 }
 
+.modal-error::-webkit-input-placeholder {
+  color: #e74246;
+}
+.modal-error:-ms-input-placeholder {
+  color: #e74246;
+}
+.modal-error::placeholder {
+  color: #e74246;
+}
+
+.modal-shake {
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
 .message-form input:focus,
 .message-form textarea:focus {
   border-color: #000;
@@ -1286,7 +1391,7 @@ input:not([disabled]) + .filter__checkbox:hover .checkbox-indicator {
 
 .slider {
   position: relative;
-  height: 429px;
+  min-height: 429px;
   margin-bottom: 80px;
 }
 
@@ -1335,17 +1440,9 @@ input:not([disabled]) + .filter__checkbox:hover .checkbox-indicator {
   border-radius: 50%;
 }
 
-.slider__slides {
-  height: 100%;
-}
-
 .slider__slide {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 .slider__text {
@@ -1363,6 +1460,7 @@ input:not([disabled]) + .filter__checkbox:hover .checkbox-indicator {
 }
 
 .slider__text p {
+  width: 410px;
   margin: 0;
 }
 
@@ -1405,4 +1503,3 @@ input:not([disabled]) + .filter__checkbox:hover .checkbox-indicator {
 #btn-3:checked ~ .slider__slides .slider__slide:nth-child(3) {
   display: block;
 }
-

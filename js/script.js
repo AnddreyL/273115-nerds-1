@@ -30,6 +30,7 @@ close.addEventListener("click", function (evt) {
   popup.classList.remove("modal-show");
   write.classList.remove("modal-error");
   email.classList.remove("modal-error");
+  popup.classList.remove("modal-shake");
 });
 
 form.addEventListener("submit", function (evt) {
@@ -37,9 +38,14 @@ form.addEventListener("submit", function (evt) {
     evt.preventDefault();
     write.classList.add("modal-error");
   }
-  
+
   if (!email.value) {
     evt.preventDefault();
     email.classList.add("modal-error");
+  }
+
+  if (!write.value || !email.value) {
+    evt.preventDefault();
+    popup.classList.add("modal-shake");
   }
 });
